@@ -29,8 +29,96 @@
 			<li><label for="fname">First Name:</label><input type="text" id="fname"  /></li>
 			<li><label for="lname">Last Name:</label><input type="text" id="lname"  /></li>
 			<li><label for="email">Email Address:</label><input type="email" id="email" placeholder="jon@google.com"  /></li>
-			<li><label for="date">Today's Date:</label><input type="date" id="date" min="2012-01-01" max="2012-12-31" placeholder="2012-05-27"/></li>
+			<li><label for="date">Today's Date:</label><input type="date" id="date" min="05-30-2012" max="12-31-2012" placeholder="05-30-2012"/></li>
        </ul>
 	</fieldset>
+<fieldset>
+	<!-- textfields -->
+	<legend>Vehicle Information</legend>
+        <ul>
+			<li><label for="car">Car:</label><input type="text" id="car"  /></li>
+  			<li><label for="make">Make:</label><input type="text" id="make" placeholder="ex: chevy, ford, etc." /></li>
+			<li>Number of Vehicles: <input type="Range" min-"0" max="5"></li>
+		</ul>
+<ul>
+	<!-- drop down -->
+	<li><label for="time">Best ET Time <small>(1/4 mile time)</small></label>
+		<select id="time">
+			<optgroup label="Best ET Time">
+			<option value="10's">10's</option>
+			<option value="9's">9's</option>
+            <option value="8's">8's</option>
+			<option value="7's">7's</option>
+			</optgroup>
+		</select>
+	</li>
+</ul>
+<ul>
+	<!-- drop down -->
+	<li><label for="power">Power <small>(Dyno time)</small></label>
+		<select id="power">
+			<optgroup label="Horse power">
+				<option value="400 hp">400 hp</option>
+				<option value="500 hp">500 hp</option>
+				<option value="600 hp">600 hp</option>
+        		<option value="700 hp">700 hp</option>
+				<option value="800 hp">800 hp</option>
+				<option value="900 hp">900 hp</option>
+				<option value="1000 hp">1000 hp</option>
+			</optgroup>
+		</select>
+	</li>
+</ul>
+<ul>
+	<!-- drop down -->
+	<li><label for="padders">Any Power Adders <small>(NOS, Turbo, Supercharged)</small></label>
+		<select name="padders">
+			<optgroup/ label="Nitrous">	
+				<option value="Single Stage">Single Stage</option>
+				<option value="Two Stage">Two Stage</option>
+        		<option value="Direct Port">Direct Port</option>
+        		<option value="Dry Kit">Dry Kit</option>
+    		</optgroup> 
+        	<optgroup/ label="Turbo">   
+        		<option value="Single Turbo">Single Turbo</option>
+        		<option value="Twin Turbo">Twin Turbo</option>
+        		<option value="Single Turbo Meth">Single Turbo Meth</option>
+        		<option value="Twin Turbo Race Fuel">Twin Turbo Race Fuel</option>
+    		</optgroup>
+        	<optgroup/ label="Supercharged"> 
+        		<option value="Supercharged F1">Supercharges F1</option>
+        		<option value="Supercharged F2">Supercharged F2</option>
+        		<option value="Supercharged F3">Supercharged F3</option>
+        		<option value="Supercharged F4">Supercharged F4</option>
+    		</optgroup>
+		</select>
+	</li>
+</ul>
+<ul>
+	<li>What Transmission?</li>
+	<!-- radio buttons -->
+	<li><input type="radio" checked value="Auto" id="auto" name="tranny" /><label for="auto">Auto</label></li>
+	<li><input type="radio" value="Manual" id="manual" name="tranny" /><label for="manual">Manual</label></li>
+</ul>
+	<ul>
+	<!-- check boxes -->			
+		<li>How did you hear about us?</li>
+		<li><input type="checkbox" checked value="Web" id="web" /><label for="web">Web</label></li>
+		<li><input type="checkbox" value="Magazine" id="magazine" /><label for="magazine">Magazine</label></li>
+		<li><label for="other">Other:</label><input type="text" id="other"  /></li>
+	</ul>
+	<ul>
+		<li><label for="comments">Like to share any further information, type your comments below:</label><textarea id="comments"></textarea></li>
+</ul>
+</fieldset>
+	<!-- submit button -->
+	<input type="submit" value="Submit" />
+	<input type="hidden" value="cust125" />
+
+</form>
+<!-- form ends -->
+<a href="#">Cleared Stored Data</a>
+<a href="#">Display Data</a>
 </body>
+<!-- body ends -->
 </html>
